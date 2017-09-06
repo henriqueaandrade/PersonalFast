@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/h"
+    tools:context="com.example.familia.personalfast.MainActivity">
+
+    <Button
+        android:id="@+id/btn_Cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:textColor="@android:color/holo_orange_dark"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="465dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="324dp"
+        android:layout_height="38dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteY="325dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_above="@+id/editText4"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="324dp"
+        android:layout_height="43dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        android:textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="373dp"
+        android:layout_marginBottom="19dp"
+        android:layout_above="@+id/checkBox2"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manter Conectado"
+        android:textColor="@android:color/holo_orange_dark"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="416dp"
+        android:id="@+id/checkBox2"
+        android:layout_above="@+id/btn_Cadastrar"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="104dp"
+        android:layout_height="30dp"
+        android:text="Esqueceu Senha"
+        android:textColor="@android:color/holo_orange_dark"
+        tools:layout_editor_absoluteX="244dp"
+        tools:layout_editor_absoluteY="418dp"
+        android:layout_above="@+id/btn_Cadastrar"
+        android:layout_alignRight="@+id/editText4"
+        android:layout_alignEnd="@+id/editText4"
+        android:layout_below="@+id/editText4"
+        android:layout_toRightOf="@+id/btn_Cadastrar"
+        android:layout_toEndOf="@+id/btn_Cadastrar" />
+
+</RelativeLayout>
